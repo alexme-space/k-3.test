@@ -27,4 +27,11 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    /**
+     * Turn off default timestamps
+     *
+     * @var bool
+     */
+    public $timestamps = false;
 }
